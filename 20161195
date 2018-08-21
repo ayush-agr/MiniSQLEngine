@@ -1,0 +1,9 @@
+#!/bin/bash
+
+printf "Enter 'quit' to stop it \n"
+read -p "Enter the query: > " query
+
+while [ "$query" != "quit" ]; do
+    python3 miniSQL.py "$query"
+    read -p "Enter the query: > " query
+done
